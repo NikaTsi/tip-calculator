@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class="logo" src="./assets/logo.svg">
+    <div class="container">
+
+        <header>
+
+            <div class="header-a">
+                <div class="err-div">
+                    <h1>Bill</h1>
+                    <span class="span-1">Can`t be zero</span>
+                </div>
+                <input class="billInput" type="number" placeholder="0"/>
+            </div>
+
+            <div class="header-b">
+                <h1>Select Tip %</h1>
+                <div class="buttons">
+                    <button class="" id="btn1" onclick="percentageCalculator(5)">
+                        <h3>5%</h3>
+                    </button>
+                    <button class="" id="btn2" onclick="percentageCalculator(10)">
+                        <h3>10%</h3>
+                    </button>
+                    <button class="" id="btn3" onclick="percentageCalculator(15)">
+                        <h3>15%</h3>
+                    </button>
+                    <button class="" id="btn4" onclick="percentageCalculator(25)">
+                        <h3>25%</h3>
+                    </button>
+                    <button class="" id="btn5" onclick="percentageCalculator(50)">
+                        <h3>50%</h3>
+                    </button>
+                    <input class="customInput" type="number" placeholder="Custom"/>
+                </div>
+            </div>
+
+            <div class="header-c">
+                <div class="err-div">
+                    <h1>Number of People</h1>
+                    <span class="span-2">Can`t be zero</span>
+                </div>
+                <input class="peopleAmountInput" type="number" placeholder="0"/>
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="tab">
+                <div>
+                    <h2>Tip Amount</h2>
+                    <p>/ person</p>
+                </div>
+                <h5 class="tip">$0.00</h5>
+            </div>
+
+            <div class="tab">
+                <div>
+                    <h2>Total</h2>
+                    <p>/ person</p>
+                </div>
+                <h5 class="total">$0.00</h5>
+            </div>
+
+            <div class="res">
+                <button class="reset">
+                    <h6>RESET</h6>
+                </button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
