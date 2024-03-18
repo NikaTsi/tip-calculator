@@ -117,6 +117,11 @@ input[type="number"] {
     color: var(--green);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 input::placeholder {
     opacity: 0.35;
 }
@@ -218,15 +223,71 @@ span {
     display: flex;
 }
 
-.err-box{
+.err-box {
     border: 2px solid #E17052;
 }
 
-.click{
+.click {
     color: var(--green);
     background-color: #9FE8DF;
 }
 
-.valid-box{
+.valid-box {
     border: 2px solid var(--lightgreen);
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@media (width >=920px) {
+    .logo {
+        margin: 163px 0 88px;
+    }
+
+    .container {
+        width: 920px;
+        flex-direction: row;
+        border-radius: 25px;
+    }
+
+    header {
+        margin: 45px 48px;
+        padding: 0;
+        width: 379px;
+    }
+
+    main {
+        margin: 32px 32px 32px 0;
+        width: 413px;
+        padding: 40px;
+        justify-content: space-between;
+    }
+    .tipPercentageButtons, .customInput{
+        width: 117px;
+    }
+    .customInput{
+        padding: 6px 14px;
+    }
+    .buttons{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px 14px;
+    }
+
+    h5{
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -1px;
+    }
+
+    .tab{
+        align-items: center;
+    }
+
+    .tabs{
+        gap: 25px;
+    }
 }
